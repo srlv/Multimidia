@@ -14,18 +14,6 @@ devil-hire/
 ├── style.css
 ├── script.js
 └── assets/
-    ├── img/
-    │   ├── hero.jpg
-    │   ├── pessoa1.jpg
-    │   ├── pessoa2.jpg
-    │   └── projeto1.jpg ... projeto4.jpg
-    ├── video/
-    │   └── hero.mp4      (opcional)
-    └── audio/
-        └── tema.mp3      (opcional)
-```
-
-A pasta `assets/` não vem com o projeto. Crie as pastas e coloque os arquivos com os nomes acima. Se algum arquivo faltar, o espaço correspondente continua mostrando o fundo listrado com o nome esperado.
 
 ## Como usar
 
@@ -38,23 +26,6 @@ A pasta `assets/` não vem com o projeto. Crie as pastas e coloque os arquivos c
    Depois acesse `http://localhost:8000`.
 
 As fontes (Cinzel Decorative e Rajdhani) vêm do Google Fonts, então é preciso internet para vê-las. Sem conexão, a página usa fontes padrão do sistema.
-
-## O que personalizar
-
-| O quê | Onde |
-|---|---|
-| Nomes, bios, tags e links (GitHub, LinkedIn) | `index.html`, seção "A dupla" |
-| Especialidades e níveis das barras | `index.html`, atributo `data-v` (0 a 100) e `data-c` (`hack`, `sec` ou `dev`) |
-| Legendas dos projetos | `index.html`, atributo `data-cap` em cada `figure` |
-| E-mail que recebe as mensagens | `script.js`, constante `EMAIL` |
-| Cores | `style.css`, bloco `:root` |
-| Fontes | `index.html` (link do Google Fonts) e `style.css` (`--titulo` e `--corpo`) |
-
-Para adicionar uma habilidade nova, copie uma linha existente:
-
-```html
-<div class="skill" data-c="sec" data-v="75"><b>Nome da habilidade</b><i></i></div>
-```
 
 ## Interações
 
@@ -75,12 +46,13 @@ Como é um site estático, funciona em qualquer hospedagem gratuita:
 ## Acessibilidade
 
 - Navegação por teclado com foco visível.
-- Animações reduzidas quando o sistema pede `prefers-reduced-motion`.
+- Animações reduzidas quando o sistema pede.
 - Layout responsivo para celular.
-
-Lembre-se de escrever o atributo `alt` das imagens com uma descrição real quando colocar as fotos.
 
 ## Créditos
 
 - Estética inspirada na franquia Devil May Cry (Capcom). Este é um projeto acadêmico sem fins comerciais e não tem relação oficial com a Capcom. Não use imagens, música ou arte oficial do jogo sem ter os direitos.
-- Fontes: [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative) e [Rajdhani](https://fonts.google.com/specimen/Rajdhani), via Google Fonts.
+
+## Caçadores Hire
+- Rômulo Levy 
+- Servolo Pedro 
