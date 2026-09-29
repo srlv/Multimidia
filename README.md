@@ -2,7 +2,7 @@
 
 # Devil May Hire
 
-Página multimídia de apresentação para uma dupla de estudantes de T.I., voltada para contratação nas áreas de hacking ético e segurança da informação. A estética é inspirada em Devil May Cry: preto, vermelho sangue, dourado e tipografia gótica.
+Página multimídia de apresentação para uma dupla de estudantes de T.I., voltada para contratação nas áreas de hacking ético e segurança da informação. 
 
 Projeto feito só com HTML, CSS e JavaScript puro, sem frameworks e sem etapa de build.
 
