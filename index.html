@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devil May Hire | Dupla de T.I. em Segurança da Informação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HUD de estilo: sobe conforme a pessoa rola a página -->
+<aside class="hud" aria-live="polite">
+  <div class="rank" id="rank">D</div>
+  <div class="rank-word" id="rankWord">Dismal</div>
+  <div class="rank-bar"><span id="rankFill"></span></div>
+</aside>
+
+<header class="top">
+  <a href="#inicio" class="logo">DMH</a>
+  <nav>
+    <a href="#dupla">A dupla</a>
+    <a href="#skills">Especialidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato" class="cta-mini">Contratar</a>
+  </nav>
+  <button id="audioBtn" class="audio" aria-pressed="false" title="Ligar/desligar trilha">Som: off</button>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <!-- Coloque um vídeo curto em assets/video/hero.mp4 (opcional) -->
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero.jpg">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Devil May <span class="glitch" data-text="Hire">Hire</span></h1>
+      <p>Dois estudantes de T.I. especializados em hacking ético e segurança da informação. Achamos a falha antes de quem quer explorá-la.</p>
+      <a href="#contato" class="btn">Contratar a dupla</a>
+      <a href="#dupla" class="btn ghost">Conhecer</a>
+    </div>
+  </section>
+
+  <!-- A DUPLA -->
+  <section id="dupla" class="section">
+    <h2>A dupla</h2>
+    <div class="duo">
+      <article class="char red">
+        <div class="slot tall"><img src="assets/img/pessoa1.jpg" alt="Foto de NOME 1" onerror="this.remove()"><span>Foto 1<br>assets/img/pessoa1.jpg</span></div>
+        <h3>NOME 1</h3>
+        <p class="role">Pentest e Red Team</p>
+        <p>Escreva aqui uma bio curta: curso, semestre, o que já construiu e por que vale contratar.</p>
+        <ul class="tags"><li>Kali Linux</li><li>Burp Suite</li><li>Python</li></ul>
+        <a href="#" class="link">GitHub</a> <a href="#" class="link">LinkedIn</a>
+      </article>
+      <article class="char blue">
+        <div class="slot tall"><img src="assets/img/pessoa2.jpg" alt="Foto de NOME 2" onerror="this.remove()"><span>Foto 2<br>assets/img/pessoa2.jpg</span></div>
+        <h3>NOME 2</h3>
+        <p class="role">Blue Team e Redes</p>
+        <p>Escreva aqui uma bio curta: curso, semestre, o que já construiu e por que vale contratar.</p>
+        <ul class="tags"><li>Wireshark</li><li>SIEM</li><li>Linux</li></ul>
+        <a href="#" class="link">GitHub</a> <a href="#" class="link">LinkedIn</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section id="skills" class="section dark">
+    <h2>Especialidades</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab on" data-f="all">Todas</button>
+      <button class="tab" data-f="hack">Hacking ético</button>
+      <button class="tab" data-f="sec">Segurança da informação</button>
+      <button class="tab" data-f="dev">Desenvolvimento</button>
+    </div>
+    <div class="skills">
+      <div class="skill" data-c="hack" data-v="85"><b>Pentest web (OWASP Top 10)</b><i></i></div>
+      <div class="skill" data-c="hack" data-v="70"><b>Engenharia reversa básica</b><i></i></div>
+      <div class="skill" data-c="hack" data-v="75"><b>CTFs e laboratórios</b><i></i></div>
+      <div class="skill" data-c="sec" data-v="80"><b>Análise de logs e SIEM</b><i></i></div>
+      <div class="skill" data-c="sec" data-v="72"><b>Hardening de servidores</b><i></i></div>
+      <div class="skill" data-c="sec" data-v="68"><b>LGPD e boas práticas</b><i></i></div>
+      <div class="skill" data-c="dev" data-v="82"><b>Python e Bash para automação</b><i></i></div>
+      <div class="skill" data-c="dev" data-v="65"><b>Web: HTML, CSS e JavaScript</b><i></i></div>
+    </div>
+    <p class="hint">Ajuste os valores em data-v (0 a 100) no index.html.</p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section">
+    <h2>Projetos</h2>
+    <p class="sub">Clique em uma imagem para ampliar.</p>
+    <div class="gallery">
+      <figure class="slot" data-cap="Projeto 1: descreva aqui"><img src="assets/img/projeto1.jpg" alt="Projeto 1" onerror="this.remove()"><span>Projeto 1</span></figure>
+      <figure class="slot" data-cap="Projeto 2: descreva aqui"><img src="assets/img/projeto2.jpg" alt="Projeto 2" onerror="this.remove()"><span>Projeto 2</span></figure>
+      <figure class="slot" data-cap="Projeto 3: descreva aqui"><img src="assets/img/projeto3.jpg" alt="Projeto 3" onerror="this.remove()"><span>Projeto 3</span></figure>
+      <figure class="slot" data-cap="Projeto 4: descreva aqui"><img src="assets/img/projeto4.jpg" alt="Projeto 4" onerror="this.remove()"><span>Projeto 4</span></figure>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section dark">
+    <h2>Contratar</h2>
+    <form id="form" class="form">
+      <label>Empresa ou nome<input name="nome" required></label>
+      <label>Vaga ou serviço<input name="vaga" placeholder="Estágio em segurança, pentest..." required></label>
+      <label>Mensagem<textarea name="msg" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+</main>
+
+<footer>Devil May Hire. Projeto acadêmico inspirado na estética de Devil May Cry.</footer>
+
+<div class="lightbox" id="lb" hidden>
+  <button class="close" aria-label="Fechar">Fechar</button>
+  <div class="lb-box"><img alt=""><p></p></div>
+</div>
+
+<audio id="bgm" loop src="assets/audio/tema.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
